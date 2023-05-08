@@ -1,0 +1,25 @@
+.all {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    width: 30vw;
+    
+}
+
+

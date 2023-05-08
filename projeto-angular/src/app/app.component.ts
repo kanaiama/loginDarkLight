@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SwiperOptions } from 'swiper';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-angular';
+  config: SwiperOptions = {
+    pagination: { 
+      el: '.swiper-pagination', 
+      clickable: true 
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 30
+  };  
 }
