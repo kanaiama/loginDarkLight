@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,18 @@
     <title>Login Dark / Light</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <main id="container">
         <form id="login-form">
             <div id="form-header">
                 <h1>Login</h1>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/moon-symbol.png" alt="moon-symbol" class="moon-symbol" id="mode-icon">
-            </div>
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/moon-symbol.png" alt="moon"
+                class="moon" id="mode-icon">
 
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/sun--v1.png" alt="sun" class="sun" id="mode-icon">
+            </div>
+            
             <div id="social-media">
                 <a href="">
                     <img src="assets/img/iconFacebook.png" alt="">
@@ -26,42 +31,45 @@
                     <img src="assets/img/iconGit.png" alt="">
                 </a>
             </div>
-
+            
             <div id="inputs">
                 <div class="input-box">
                     <label for="name">
                         Name
                         <div class="input-field">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png" alt="user--v1"/>
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png"
+                                alt="user--v1" />
                             <input type="text" id="name" name="name">
                         </div>
                     </label>
                 </div>
-
+                
                 <div class="input-box">
                     <label for="email">
                         Email
                         <div class="input-field">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post"/>
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png"
+                            alt="new-post" />
                             <input type="email" id="email" name="email">
                         </div>
                     </label>
                 </div>
-
+                
                 <div class="input-box">
                     <label for="password">
                         Password
                         <div class="input-field">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/key--v1.png" alt="key--v1"/>
-                            <input type="password" id="password" password="password">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/key--v1.png"
+                                alt="key--v1" />
+                                <input type="password" id="password" password="password">
+                            </div>
+                        </label>
+                        <div id="forgot-password">
+                            <a href="#">
+                                Forgot you password?
+                            </a>
                         </div>
-                    </label>
-                    <div id="forgot-password">
-                        <a href="#">
-                            Forgot you password?
-                        </a>
-                    </div>
-                </div>  
+                </div>
             </div>
 
             <button type="submit" id="login-button">
@@ -69,5 +77,6 @@
             </button>
         </form>
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
