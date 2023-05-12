@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Dark / Light</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <main id="container">
         <form id="login-form">
             <div id="form-header">
                 <h1>Login</h1>
-                <i id="mode-icon" class="fa-solid fa-moon"></i>
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/moon-symbol.png" alt="moon-symbol" class="moon-symbol" id="mode-icon">
             </div>
 
             <div id="social-media">
                 <a href="">
-                    <img src="" alt="">
+                    <img src="assets/img/iconFacebook.png" alt="">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="assets/img/iconGoogle.png" alt="">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="assets/img/iconGit.png" alt="">
                 </a>
             </div>
 
@@ -31,7 +32,7 @@
                     <label for="name">
                         Name
                         <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/user--v1.png" alt="user--v1"/>
                             <input type="text" id="name" name="name">
                         </div>
                     </label>
@@ -41,7 +42,7 @@
                     <label for="email">
                         Email
                         <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post"/>
                             <input type="email" id="email" name="email">
                         </div>
                     </label>
@@ -51,8 +52,8 @@
                     <label for="password">
                         Password
                         <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="password" password="password">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/key--v1.png" alt="key--v1"/>
+                            <input type="password" id="password" password="password">
                         </div>
                     </label>
                     <div id="forgot-password">
@@ -63,7 +64,9 @@
                 </div>  
             </div>
 
-            <button type="submit" id="login-button"></button>
+            <button type="submit" id="login-button">
+                Login
+            </button>
         </form>
     </main>
 </body>
