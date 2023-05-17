@@ -93,7 +93,7 @@
     color: var(--color-dark-50);
 }
 
-.input-field {
+.input_field {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -102,12 +102,12 @@
     border-bottom: 1px solid var(--color-purple-50);
 }
 
-.input-field img {
+.input_field img {
     font-size: 18px;
     color: var(--color-dark-900);
 }
 
-.input-field input {
+.input_field input {
     border: none;
     background-color: transparent;
     width: 260px;
@@ -115,7 +115,7 @@
     padding: 0px 5px;
 }
 
-.input-field input:focus {
+.input_field input:focus {
     outline: none;
 }
 
@@ -147,10 +147,43 @@
 .dark#login-form {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
 }
 
-.dark#login-form .input-field input,
-.dark#login-form .input-field img {
+.dark#login-form .input_field input,
+.dark#login-form .input_field img {
     color: var(--color-light-50);
 }
 
+.light#login-form {
+    color: var(--color-dark-900);
+    background-color: var(--color-light-50);
+    animation: dark-to-light 0.3s ease-in-out;
+
+}
+
+.light#login-form .input_field input,
+.light#login-form .input_field img {
+    color: var(--color-dark-900);
+}
+
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100% {
+        background-color: var(--color-dark-100);
+    }
+}

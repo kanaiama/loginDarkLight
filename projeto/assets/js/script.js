@@ -1,17 +1,23 @@
-const mode = document.getElementById('mode-icon');
+const modeDark = document.getElementById('moon-id');
+const modeLight = document.getElementById('sun-id')
 
-mode.addEventListener('click', () => {
+modeDark.addEventListener('click', () => {
     const form = document.getElementById('login-form');
 
-    if(mode.classList.contains('moon')) {
+    if(modeDark.classList.contains('moon')) {
         form.classList.add('dark');
+        form.classList.remove('light')
         return;
     }
-    if(mode.classList.contains('sun')) {
-        form.classList.remove('dark');
-        return;
-    }
-    form.classList.add('light')
-    form.classList.remove('dark');
+})
+
+modeLight.addEventListener('click', () => {
+    const form = document.getElementById('login-form');
     
+    if(modeLight.classList.contains('sun')) {
+        form.classList.add('light')
+        form.classList.remove('dark')
+        return;
+    }
+
 })
